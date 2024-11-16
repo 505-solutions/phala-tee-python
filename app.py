@@ -45,7 +45,7 @@ async def verifyPol():
         dataset_hash = f.read()
 
     if verification_passed:
-        message = 'Verification passed'+ '_' + dataset_hash
+        message = 'Verification passed' + '_' + dataset_hash
         tdxQuote = await client.tdx_quote(message)
         # reportData = 0xdfeb9480eff92e7138f1dc753bacda973a0c8cbe23e6f4ef98fb696118b99cc61ce525e2a6f49a2fee22bdadd80ac243c0f5365f3aa55ff9bdcc91a0cdc5fd52
         return {"message": "Verification passed", "tdxQuote": tdxQuote}
